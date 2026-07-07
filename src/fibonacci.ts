@@ -1,7 +1,5 @@
 export const computeFibonacciNumber = (position: number | null, recursion: boolean = false): number => {
-    if (recursion) {
-        return recursiveFibonacci(1, 1, position - 2);
-    }
+    
 
     let notNullPosition = position;
     if (notNullPosition === null) {
@@ -14,6 +12,10 @@ export const computeFibonacciNumber = (position: number | null, recursion: boole
     }
     if (position < 0) {
         return computeNegativeFibonacci(position);
+    }
+
+    if (recursion) {
+        return recursiveFibonacci(1, 1, position - 2);
     }
 
 
