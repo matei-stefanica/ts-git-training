@@ -4,8 +4,6 @@ export const computeFibonacciNumber = (position: number | null): number => {
         notNullPosition = 1;   
     }
 
-    let i = 1;
-    let j = 1;
 
     if (position === 0) {
         return 0;
